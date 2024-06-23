@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tailwind practice</title>
+  <link rel="stylesheet" href="dist/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!--header-part-->
+<header class="border border-transparent pb-5 shadow-md">
+  <div class="container flex items-center justify-between pt-7">
+    <a href="#" class="w-1/3">
+      <h1 class="text-3xl"><span class="text-darkgreen02">RAF</span>CART</h1>
+    </a>
+    <div class="flex w-2/3 border-2 border-shadowgreen rounded-s-md rounded-e-md relative mr-14">
+      <h2 class="border-r-2 py-3 border-shadowgreen px-8">All Category</h2>
+      <input type="text" placeholder="search" class="border-r-2 py-3 border-shadowgreen pr-48 pl-2.5 focus:outline-darkgreen">
+      <a href="#" class="bg-shadowgreen absolute -right-1 text-2xl px-16 py-2 rounded-e-lg text-black hover:bg-darkgreen ">Search</a>
+    </div>
+
+    <!--icons-->
+    <div class="w-3/3 flex">
+      <a href="#" class="pl-44 pr-11 align-middle hover:text-gray-500">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+        </svg>
+        <h4 class="text-sm text-center">favorites</h4>
+      </a>
+      <a href="#" class="pr-6 align-middle hover:text-gray-500">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+        </svg>
+        <h4 class="text-sm text-center">Cart</h4>
+      </a>
+      <a href="#" class="pl-5 align-middle hover:text-gray-500">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+        </svg>
+        <h4 class="text-sm text-center">Account</h4>
+      </a>
+    </div>
+
+  </div>
+</header>
+<main>
+
+  <!--top-menu-->
+  <!--nave-bar-->
+  <section class="border bg-gray-500">
+    <div class="flex container justify-between items-center">
+      <div class="flex border py-7 px-10 bg-shadowgreen border-shadowgreen relative hover:text-slate-200 group">
+        <a href="#" class="mr-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+          </svg>
+        </a>
+        <h2 class="text-black text-base cursor-pointer hover:text-slate-200">All Category</h2>
+        <div class="absolute w-full left-0 top-full bg-slate-200 shadow-md divide-y divide-y-gray-500 divide-dashed">
+          <a href="#" class="px-14 py-3 items-center hidden group-hover:inline-flex hover:bg-gray-500 transition group">
+            <img src="pictures/icons8-bedroom-80.png" alt="bedroom" class="w-7 object-contain">
+            <span class="ml-3 text-black text-base text-center">bedroom</span>
+          </a>
+
+          <a href="#" class="px-16 py-3 items-center hidden group-hover:inline-flex hover:bg-gray-500 transition group">
+            <img src="pictures/icons8-sofa-100.png" alt="sofa" class="w-8 object-contain">
+            <span class="pl-5 text-black text-base text-center">Sofa</span>
+          </a>
+
+          <a href="#" class="px-16 py-3 items-center hidden group-hover:inline-flex hover:bg-gray-500 transition group">
+            <img src="pictures/icons8-office-100.png" alt="office" class="w-8 object-contain">
+            <span class="ml-5 text-black text-sm text-center">Office</span>
+          </a>
+
+          <a href="#" class="px-14 py-3 items-center hidden group-hover:inline-flex hover:bg-gray-500 transition group">
+            <img src="pictures/icons8-outdoor-toilet-80.png" alt="outdoor" class="w-8 object-contain">
+            <span class="ml-5 text-black text-sm text-center">Outdoor</span>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <ul class="flex pr-96 mr-96 text-lg ">
+          <li class="mr-6 text-white hover:-translate-y-2 hover:text-lightgreen hover:transition-all">
+            <a href="#">Home</a>
+          </li>
+          <li class="mr-6 text-white hover:-translate-y-2 hover:text-lightgreen hover:transition-all">
+            <a href="#">Shop</a>
+          </li>
+          <li class="mr-6 text-white hover:-translate-y-2 hover:text-lightgreen hover:transition-all">
+            <a href="#">About us</a>
+          </li>
+          <li class="mr-6 text-white hover:-translate-y-2 hover:text-lightgreen hover:transition-all">
+            <a href="#">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <h3 class="text-lg cursor-pointer  text-white hover:text-slate-200 hover:transition-all">Login / Register</h3>
+    </div>
+  </section>
+
+  <!--picture-slide-->
+  <section>
+    <div class="bg-cover bg-no-repeat bg-center">
+      <img src="pictures/living-room-wall-mockup-with-green-velvet-armchair-blank-white-interior-background_41470-4735.jpg" alt="banner" class="w-100 h-2/5">
+    </div>
+  </section>
+</main>
+</body>
+</html>
